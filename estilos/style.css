@@ -51,26 +51,17 @@ section#login > div#imagem {
 
 section#login > div#formulario {
     display: block;
-    background-color: white;
-    width: 250px;
-    height: 300px;
     padding: 10px;
 }
 
 div#formulario > h1 {
    text-align: center;
-   padding: 10px;
    margin-bottom: 10px;
    font-weight: bolder;
 }
 
 div#formulario > p {
     font-size: 0.8em;
-}
-
-form span {
-    color: white;
-    padding: 5px;
 }
 
 form > div.campo {
@@ -81,6 +72,15 @@ form > div.campo {
     height: 40px;
     border-radius: 8px;
     margin: 5px 0px;
+}
+
+form span {
+    color: white;
+    padding: 5px;
+}
+
+div.campo > label {
+    display: none;
 }
 
 div.campo > input {
@@ -98,7 +98,7 @@ div.campo > input:hover {
     color: black;
 }
 
-form > input {
+form > input[type=submit] {
     display: block;
     font-size: 1em;
     width: 100%;
@@ -110,7 +110,7 @@ form > input {
     cursor: pointer;
 }
 
-form > input:hover {
+form > input[type=submit]:hover {
     background-color: var(--cor0);
 }
 
@@ -132,7 +132,8 @@ form > a.botao {
 form > a.botao:hover {
     background-color: var(--cor1);
 }
-span#botao {
+
+form > a.botao > span {
+    font-size: 0.8em;
     color: var(--cor0);
-    padding: 5px;
 }
